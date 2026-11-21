@@ -1,0 +1,25 @@
+{
+  "name": "rota-leite",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "dev": "node scripts/build-ui.js && node scripts/dev.js",
+    "build": "node scripts/build-ui.js && node scripts/build.js",
+    "test": "node --test",
+    "build:vercel": "node scripts/build-ui.js && node scripts/build-vercel.js",
+    "db:vercel": "node scripts/migrate-vercel.js"
+  },
+  "dependencies": {
+    "@libsql/client": "0.18.0",
+    "jose": "6.2.18",
+    "vue": "3.5.46"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "6.0.11",
+    "vite": "7.3.8"
+  }
+}
