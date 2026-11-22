@@ -42,8 +42,10 @@ test('carrega a base uma única vez e distingue o indicador municipal', async t 
   const initial = await (await send('/api/state')).json();
   assert.equal(initial.municipal.liters, 18456000);
   assert.ok(initial.producers.every(p => p.demo));
-  assert.equal(initial.routes.length, 2);
-  assert.equal(initial.events.length, 4);
+  assert.equal(initial.routes.length, 17);
+  assert.equal(initial.events.length, 20);
+  assert.ok(initial.routes.some(route => route.date === '2026-11-15' && route.closedAt && route.demo));
+  assert.ok(initial.routes.some(route => route.date === '2026-11-30' && !route.closedAt && route.demo));
   assert.deepEqual(await (await send('/api/state')).json(), initial);
 });
 
