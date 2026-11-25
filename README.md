@@ -10,6 +10,8 @@
   </p>
 </div>
 
+**Portfólio de gestão de projetos** · [Case de implantação em inglês](docs/implementation-case-study.md)
+
 ## Por que o Rota Leite?
 
 A coleta de leite exige que o laticínio organize a ordem das visitas, acompanhe os volumes e saiba rapidamente quais paradas tiveram problemas. Em Colméia, a dispersão dos fornecedores é um dos desafios logísticos descritos no estudo da Embrapa sobre a cadeia do leite. Uma dificuldade que o projeto decidiu tratar é o repasse das informações da coleta entre o motorista e o gestor, inclusive quando a equipe fica sem conexão. [Estudo da Embrapa](https://www.infoteca.cnptia.embrapa.br/infoteca/handle/doc/1190705)
