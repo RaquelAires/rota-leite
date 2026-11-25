@@ -1,4 +1,12 @@
+<div align="center">
+  <img src="../public/logo.svg" width="80" alt="Rota Leite">
+</div>
+
 # Rota Leite | Implementation and delivery case study
+
+[Português](implementation-case-study.pt-BR.md) · [English](implementation-case-study.md) · [Español](implementation-case-study.es.md)
+
+> Technology project management · Offline field operations · Proposed pilot
 
 Rota Leite is a software engineering MVP for planning and recording dairy collection routes in Colméia, Tocantins, Brazil. It connects two users: a collection manager who plans and closes routes, and a driver who records collected volumes and exceptions in the field, including during connectivity gaps.
 
@@ -8,6 +16,13 @@ Rota Leite is a software engineering MVP for planning and recording dairy collec
 | Proposed pilot | One manager, one driver and one route. The plan, thresholds and example change below are portfolio scenarios. Field results have yet to be measured. |
 
 [Technical documentation and local demo](../README.md) · [Deployment guide](../VERCEL.md)
+
+## From route planning to reconciliation
+
+```mermaid
+flowchart LR
+  A["Manager assigns route"] --> B["Driver records stops offline"] --> C["Records sync on reconnection"] --> D["Manager closes route and exports CSV"]
+```
 
 ## Scope and acceptance
 
@@ -57,3 +72,4 @@ The pilot covers the daily workflow from route assignment to CSV reconciliation.
 | Unresolved sync items | Count entries still pending or awaiting review when the manager is ready to close. | Zero unresolved items at sign-off. |
 
 The evidence to retain is a redacted CSV, completed acceptance checklist, risk and decision updates, and the manager's rollout decision. The repository documents the MVP and its demo. The pilot plan proposes how to validate the operational outcome.
+

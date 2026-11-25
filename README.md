@@ -10,7 +10,7 @@
   </p>
 </div>
 
-**Portfólio de gestão de projetos** · [Case de implantação em inglês](docs/implementation-case-study.md)
+**Portfólio de gestão de projetos** · Case de implantação e plano de piloto em [Português](docs/implementation-case-study.pt-BR.md) · [English](docs/implementation-case-study.md) · [Español](docs/implementation-case-study.es.md)
 
 ## Por que o Rota Leite?
 
